@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>QCM</title>
+	</head>
+	<body>
+		<form name="QCM">
+			Cocher la bonne reponse:<br>
+			<p>
+				En quelle annee sommes-nous?<br>
+				<input name="Question 1" type="checkbox" value="-2.5"> 2015</input><br>
+				<input name="Question 1" type="checkbox" value="5"> 2016</input><br>
+				<input name="Question 1" type="checkbox" value="-2.5"> 2017</input><br>
+			</p>
+			<p>
+				Dans quel pays?<br>
+				<input name="Question 2" type="checkbox" value="5"> Senegal</input><br>
+				<input name="Question 2" type="checkbox" value="-2.5"> France</input><br>
+			</p>
+			<p>
+				Qui est l'actuel president?<br>
+				<input name="Question 3" type="checkbox" value="-2"> L. S. Senghor</input><br>
+				<input name="Question 3" type="checkbox" value="-2"> Abdou Diouf</input><br>
+				<input name="Question 3" type="checkbox" value="-2"> Abdoulaye Wade</input><br>
+				<input name="Question 3" type="checkbox" value="5"> Macky Sall</input><br>
+			</p>
+			<p>
+				Est-ce que tout le monde est satisfait par sa politique?<br>
+				<input name="Question 4" type="radio" value="0"> OUI</input>
+				<input name="Question 4" type="radio" value="5"> NON</input><br>
+			</p>
+			<p>
+				Quelle est la meilleure universite du Senegal?<br>
+				<input name="Question 5" type="radio" value="5"> UCAD</input>
+				<input name="Question 5" type="radio" value="2.5"> Universite polytechnique de Thies</input>
+				<input name="Question 5" type="radio" value="2.5"> Universite de Bambey</input><br>
+			</p>
+		</form>
+		<input type="submit" value="Soumettre"/>
+		<script type="text/javascript">
+			var q1,q2,q3;
+			function note(var q1, var q2, var q3)
+			{
+				var somme;
+				for (var i = 0; i <= 4; i++)
+					{somme+=q1+q2+q3;
+				return somme;
+			}
+			alert('Vous avez /20');
+		</script>
+	</body>
+</html>

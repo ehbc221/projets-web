@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<title>Mon_Projet_Calculatrice</title>
+	<link rel="stylesheet" media="all" type="text/css" href="ma_Calacul.css" />
+	<script type="text/javascript">
+		function saisi(carac)
+		{
+			document.calcul.calc00.value+=carac;
+		}
+		function resolution() 
+		{
+			
+			var taper=eval(document.calcul.hcalc00.value);
+			document.calcul.calc00.value=taper;
+		}
+		function effacer()
+		{
+			var eff=document.calcul.calc00.value
+		    substring(0,eff);
+			
+		}
+		function effacePar1()
+		{
+			var nombre=document.calcul.calc00.value;
+			nombrePar1=nombre.length;
+			document.calcul.calc00.value=nombre.substring(0,nombrePar1-1);
+		}
+		function racineCarre() 
+		{
+			var racine=eval(document.calcul.calc00.value);
+			document.calcul.calc00.value=Math.sqrt(racine);
+
+		}
+	</script>
+</head>
+<body>
+<marquee><h1> Ma calculatrice</h1></marquee>
+         <form name="calcul">
+            <TABLE name="calculatrice" border="1">
+                <TR>
+                <td colspan="4" name="c0c">
+                	<input type="text" readonly="readonly" name="calc00"/>
+                </td>
+	            <TR>
+	                <TD>
+	                	<input type="reset" value="CE" onclick=effacer() />
+	                </TD>
+	                <TD>                </TR>
+
+	                	<input type="button" value='&larr;' onclick=effacePar1() />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="%" onclick="saisi('%')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="+" onclick="saisi('+')" />
+	                </TD>
+	            </TR>
+	            <TR>
+	                <TD>
+	                	<input type="button" value="7" onclick="saisi('7')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="8" onclick="saisi('8')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="9" onclick="saisi('9')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="-" onclick="saisi('-')" />
+	                </TD>
+	            </TR>
+	            <TR>
+	                <TD>
+	                	<input type="button" value="4" onclick="saisi('4')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="5" onclick="saisi('5')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="6" onclick="saisi('6')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="*" onclick="saisi('*')" />
+	                </TD>
+	            </TR>
+	            <TR>
+	                <TD>
+	                	<input type="button" value="1" onclick="saisi('1')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="2" onclick="saisi('2')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="3" onclick="saisi('3')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="/" onclick="saisi('/')"/>
+	                </TD>
+	            </TR>
+	            <TR>
+	                <TD>
+	                	<input type="button" value="0" onclick="saisi('0') "/>
+	                </TD>
+	                <TD>
+	                	<input type="button" value="sqrt" onclick=racineCarre() />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="," onclick="saisi(',')" />
+	                </TD>
+	                <TD>
+	                	<input type="button" value="=" onclick=resolution() />
+	                </TD>
+	            </TR>
+	        </TABLE>
+	   </form>
+	</body>
+</html>

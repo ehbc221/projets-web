@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8"/>
+		<title>Calculatrice</title>
+		<link href="Calculatrice.css" media="all" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript">
+			function effacer(integer nombre)
+			{
+				if (nombre==0)
+				{
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+	<form name="Calcul">
+		<table name="calculatrice" align="center" border="1" cellspadding="10">
+			<tr>
+				<td colspan="4">
+					<input name="champ" readonly="readonly" type="text"></input>
+				</td>
+			</tr>
+			<tr>
+				<td name="champ">
+					<input name="boutton" type="reset" onclick=effacer(0) value="CE"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick=effacer(1) value='&larr;'></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('%')" value="%"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('+')" value="+"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('7')" value="7"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('8')" value="8"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('9')" value=9></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('-')" value="-"></input>
+			</tr>
+			<tr>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('4')" value="4"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('5')" value="5"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('6')" value="6"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('*')" value="*"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('1')" value="1"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('2')" value="2"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('3')" value="3"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('/')" value="/"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('0')" value="0"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('sqrt')" value="sqrt"></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher(',')" value=","></input>
+				</td>
+				<td>
+					<input name="boutton" type="button" onclick="afficher('=')" value="="></input>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</body>
+</html>
