@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mon CV</title>
+	<link rel="stylesheet" id="style" href="theme1.css">
+</head>
+<body>
+	<header>
+		<h1>El Hadj Babacar Cissé</h1>
+		<h3>ehbc221@gmail.com</h3>
+		<h3>77-865-91-65</h3>
+	</header>
+	<section>
+		<p>
+			21 ans, étudiant en 3ème année en Informatique à Dakar (Sénégal).
+		</p>
+		<h4>Mon expérience</h4>
+		<p>
+			<ul>
+				<li>
+					<strong>De 1999 à 2011 :</strong> études primaires et secondaires au Collège Notre Dame du Liban (CNDL).
+				</li>
+				<li>
+					<strong>De 2011 à 2014 :</strong> Passage au Lycée Thierno Seydou Nourou Tall (LTSNT) et obtention de mon Baccalauréat (Série S2).
+				</li>
+				<li>
+					<strong>De 2014 à aujourd'hui :</strong> Etudes supérieures en DIC (Diplome d'Igénieur en Conception) en Informatique à l'<a href="http://www.esp.sn/" title="Aller sur le site de l'ESP">Ecole Supérieure Polytechnique (ESP)</a>.
+				</li>
+			</ul>
+		</p>
+		<h4>Mes compétences</h4>
+		<p>
+			<ul>
+				<li>
+					HTML5 et CSS3
+				</li>
+				<li>
+					PHP
+				</li>
+				<li>
+					SQL
+				</li>
+			</ul>
+		</p>
+		<h4>Ma formation</h4>
+		<p>
+			OpenClassrooms, W3Schools et GrafikArt.
+		</p>
+	</section>
+	<footer>
+		<button id="theme1" onclick="changeCSS('theme1.css', 0);">Thème 1</button>
+		<button id="theme2" onclick="changeCSS('theme2.css', 0);">Thème 2</button>
+		<button id="theme3" onclick="changeCSS('theme3.css', 0);">Thème 3</button>
+		<button id="theme4" onclick="changeCSS2("theme3.css");">Thème 4</button>
+	</footer>
+	<script>
+		function changeCSS(cssFile, cssLinkIndex) {
+		var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+		var newlink = document.createElement("link");
+		newlink.setAttribute("rel", "stylesheet");
+		newlink.setAttribute("type", "text/css");
+		newlink.setAttribute("href", "theme2.css");
+		document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+		}
+		function changeCSS2(chemin) {
+			document.getElementById("style").setAttribute('href', chemin);
+		}
+	</script>
+</body>
+</html>

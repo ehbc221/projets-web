@@ -1,0 +1,18 @@
+body {
+	background-color: #F2F2F2;
+}
+header, footer {
+	text-align: center;
+}
+section {
+	margin-left: 15px;
+}
+footer {
+	background-color: grey;
+	padding: 15px 0 15px 0;
+}
+button {
+	font-style: italic;
+	font-weight: bolder;
+	border-radius: 10px;
+}

@@ -1,0 +1,19 @@
+body {
+	background-color: #8B3626;
+	color: white;
+}
+header, footer {
+	text-align: center;
+}
+section {
+	margin-left: 15px;
+}
+footer {
+	background-color: #8B5A2B;
+	padding: 15px 0 15px 0;
+}
+button {
+	font-style: italic;
+	font-weight: bolder;
+	border-radius: 10px;
+}
